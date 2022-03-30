@@ -1,0 +1,505 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bnav-color: #262626;
+    --border-color: #40BFFF
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    border:3px solid blue;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bnav-color)
+}
+
+.bnav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    border: 3px solid blue;
+}
+
+.sub-nav {
+    display: flex;
+}
+
+.sub-nav li {
+ margin: 20px;
+}
+
+.bnav {
+ display: flex;
+}
+
+.bnav li {
+ padding: 8px;
+}
+
+.bnav a, .sub-container a {
+ color: var(--bnav-color);
+ font-size: 10px;
+ font-weight: bolder;
+ }
+
+.nav-container {
+   display: flex;
+   justify-content: space-between;
+   width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    border: 1px solid black; 
+    overflow: hidden;
+}
+
+.logo-container {
+    display: flex;
+    text-transform: uppercase;
+    color: var(--border-color);
+}
+
+.logo-container h5 {
+    font-weight: bolder;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li a {
+    width: 35%;
+    margin: 5px;
+    padding: 5px 35px;
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+ }
+
+.banner-container {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-container {
+    background: url('/images/Promotion Image.png');
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.banner-text h1 {
+    font-size: 4rem;
+}
+
+@media (max-width:580px ) {
+    .banner-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .img-container {
+        background: url('/images/Promotion Image.png');
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.hero {
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    /*    border: 2px solid red;*/
+    position: absolute;
+    top: 95%;
+}
+
+.hero-images {
+    display: flex;
+    width: 90%;
+    /*    border: 1px solid green;*/
+    margin: 0 auto;
+}
+
+.image img {
+    margin: 0 auto;
+}
+
+.img-text {
+    position: absolute;
+    margin: 20px 25px;
+    color: var(--bnav-color);
+}
+
+.img-text h4 {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+@media (max-width : 580px) {
+    .hero-images {
+        flex-direction: column;
+        margin-top: 130px;
+        text-align: center;
+    }
+
+    .image img {
+        width: 350px;
+        height: 250px;
+        margin: 5px;
+    }
+
+    .img-text {
+        position: absolute;
+        left: 15%;
+        color: var(--bnav-color);
+        font-weight: bolder;
+    }
+
+     .img-text h4 {
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+    .all-wrapper {
+        margin-top: 600px;
+    }
+}
+
+@media (min-width:580px) and (max-width:920px) {
+    .hero-images {
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .image img {
+        width: 280px;
+        height: 200px;
+        margin: 5px;
+    }
+}
+
+@media (min-width:930px) {
+    .image img {
+        width: 350px;
+        height: 250px;
+        margin: 1px;
+    }
+}
+.best {
+    margin-top: 300px;
+    text-align: center;
+}
+
+.all-nav {
+    display: flex;
+    justify-content: center;
+}
+
+    .all-nav li {
+        margin: 25px;
+    }
+
+        .all-nav li a {
+            color: var(--bnav-color);
+        }
+
+
+.all-image {
+}
+
+.all-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.all-container-text {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+    .all-container-text h3 {
+        font-size: 15px;
+    }
+
+.all {
+    border: 3px solid #F6F7F8;
+    gap: 7px;
+    margin: 6px;
+}
+
+.stars {
+    color: #FFC600;
+    margin-top: 10px;
+}
+
+.prices {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+    .prices p {
+        text-align: center;
+        margin: 5px;
+    }
+
+        .prices p:last-child {
+            color: red;
+        }
+
+        .prices p:nth-child(2) {
+            text-decoration: line-through;
+        }
+
+        .prices p:first-child {
+            color: #40BFFF
+        }
+
+@media (max-width : 580px) {
+    .all {
+        width: 100%;
+    }
+
+    .all-image img {
+        margin: 0 auto;
+        margin-left: 58px
+    }
+}
+
+/*  load starts here*/
+.load {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.addidas-wrapper {
+    width: 100%;
+    margin-top: 30px;
+    border : 2px solid red;
+}
+
+.addidas-container {
+    background-color: #40BFFF;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    /* position: absolute; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.addidas-img {
+    margin-top: -50px;
+}
+
+.addidas-text {
+    margin-left: 60px;
+    padding: 10px;
+    margin: 90px;
+    color: #fff;
+}
+
+.addidas-text h3 {
+        font-size: 35px;
+}
+
+.addidas-text p {
+        font-size: 18px;
+        margin-top: 16px;
+ }
+
+.addidas-text a {
+        display: block;
+        text-align: start;
+        margin-top: 20px;
+        color: #fff;
+ }
+/*    load ends here*/
+
+/*source services starts here*/
+.Ourservices {
+    display:flex;
+    margin: 3rem 3.5rem;
+    font-family: 'Monserrat', sans-serif;
+    border:2px solid black;
+}
+
+.services {
+    text-align: center;
+    padding: 10px;
+}
+
+.services h6 {
+        font-size: 2rem;
+        color: #FF6875;
+        margin: 10px 10px;
+}
+
+.services h4 {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+ }
+
+.services p {
+        font-size: 13px;
+}
+
+@media(min-width: 580px) {
+    .Ourservices {
+        flex-direction: row;
+    }
+}
+
+.latest {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Monserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 50px;
+}
+
+.latest-news {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    font-family: 'Monserrat', sans-serif;
+    border:5px solid dashed;
+}
+
+.news-container {
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    border:4px solid groove;
+}
+
+.news-text {
+    font-size: 13px;
+    padding: 15px;
+    border:4px solid red;
+}
+
+.news-text h3, p {
+        margin-top: 10px;
+        letter-spacing: 1px;
+        border:3px solid black;
+}
+
+.feature-text {
+    padding: 7px;
+    font-size: 13px;
+    border:3px solid black;
+}
+
+.input {
+    margin: 50px 50px;
+    text-align: center;
+    border: 2px solid red;
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    background-color: #BCDDFE;
+    border:5px solid green;
+}
+
+.footer-div {
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+    border: 4px solid blue;
+}
+
+.footer-div2 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    border: 4px solid blue;
+}
+
+.footer-text {
+    border: 1px solid red;
+    margin-top: 50px;
+}
+
+.footer-text h3 {
+}
+
+.footer-text p {
+        width: 60%;
+}
+
+.media-icons {
+    display: inline-block;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.twit {
+    display: inline-block;
+    color: #03A9F4;
+    border: 1px solid red;
+    margin-left: 20px;
+}
+
+.fb {
+    color: #385C8E;
+}
+
+/*.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;*/ /* Vertically center the text there */
+/*}*/
